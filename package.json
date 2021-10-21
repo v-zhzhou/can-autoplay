@@ -13,6 +13,10 @@
     "standard": "^10.0.3",
     "watchify": "^3.9.0"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gkatsev/can-autoplay.git"
+  },
   "scripts": {
     "build": "browserify lib/index.js > build/can-autoplay.js --standalone canAutoplay && google-closure-compiler-js 2>/dev/null build/can-autoplay.js > build/can-autoplay.min.js --languageOut=ES6",
     "watch": "watchify lib/index.js -o build/can-autoplay.js -v --standalone canAutoplay",
